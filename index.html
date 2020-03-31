@@ -2,15 +2,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Prose Poem Page</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I love dogs, cats and unicorns. I eat vegitables when necessary.</p>
-    <p>I never eat unicorns.</p>
-    <p>Vegitables fail at golf.</p>
-    <p>Donald Trump fails at golf.</p>
-    <p>It is possible that Donald Trump could be a vegitable,</p>
-    <p>but Donald Trump is not good for you.</p>
+
+    <div class="flip-card-container">
+        <div class="flip-card">
+          <div class="flip-card-front">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Albert Einstein">
+          </div>
+          <div class="flip-card-back">
+            <p>
+              "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
+              <span>- Albert Einstein -</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+<script type="text/javascript">
+    const mycardcontainer = document.querySelector(".flip-card-container");
+    mycardcontainer.addEventListener("click", function(){
+    mycardcontainer.classList.toggle("flpover"); 
+});
+</script>
+
+
 </body>
 </html>
